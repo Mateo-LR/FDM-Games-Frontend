@@ -35,7 +35,6 @@
         color: #E93434;
 }
 
-/* ENLACES */
 .links {
     display: flex;
     align-items: center;
@@ -61,7 +60,6 @@
     background-color: #777777;
 }
 
-/* BUSCADOR Y BOTONES */
 .botones {
     display: flex;
     align-items: center;
