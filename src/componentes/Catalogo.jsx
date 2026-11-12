@@ -24,6 +24,7 @@ export default function Catalogo() {
                                 <span className="precio">$60.000</span>
                             </div>
                             <h3>Resident Evil Requiem</h3>
+                            <Link href="/detalleprod"> Detalle producto </Link>
                         </div>
 
                         <div className="juego">

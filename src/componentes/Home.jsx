@@ -6,8 +6,8 @@ import shooter from "../assets/iconos/icono-shooter.svg"
 import sandbox from "../assets/iconos/icono-sandbox.svg"
 import { Link } from "wouter"
 
-export default function Home(){
-    return(
+export default function Home() {
+    return (
         <>
             <body>
                 <div className="banner">
@@ -15,7 +15,7 @@ export default function Home(){
                     <div className="texto-banner">
                         <p>
                             Descubre más
-                            <br /> 
+                            <br />
                             de nuestra
                             <br />
                             amplia variedad
@@ -30,10 +30,10 @@ export default function Home(){
                         <div className="linea-dec">
                         </div>
                         <h2>Categorías destacadas</h2>
-                        <div className="linea-dec"> 
+                        <div className="linea-dec">
                         </div>
                     </div>
-                    
+
                     <div className="cont-cat">
                         <div className="categoria">
                             <Link href="/catalogo" className="icono-cat">
@@ -69,10 +69,27 @@ export default function Home(){
                         <div className="linea-dec">
                         </div>
                     </div>
-                    
+                    <div className="cat-juegodest">
+
+                    </div>
+                    <div className="cont-juegos">
+                        <div className="juegodest">
+                            <h3>Juego 1</h3>
+                        </div>
+                        <div className="juegodest">
+                            <h3>Juego 1</h3>
+                        </div>
+                        <div className="juegodest">
+                            <h3>Juego 1</h3>
+                        </div>
+                        <div className="juegodest">
+                            <h3>Juego 1</h3>
+                        </div>
+                    </div>
+
                 </div>
             </body>
-            
+
         </>
     )
 }

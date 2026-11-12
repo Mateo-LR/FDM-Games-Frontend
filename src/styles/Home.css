@@ -80,13 +80,6 @@ body{
     width: 50vh;
     height: 2px;
 }
-.juegos-dest{
-    color: white;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
 
 .cont-cat {
     background-image: url("../assets/fondo4.jpg");
@@ -147,4 +140,21 @@ body{
     letter-spacing: 1px;
     color: #ffffff;
     font-family: system-ui, -apple-system, sans-serif;
+}
+
+.cont-juegos {  
+    background-color: red;
+    width: 20vh;
+    margin-top: 5vh;
+    color: white;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.juegosdest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
