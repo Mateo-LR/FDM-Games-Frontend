@@ -7,7 +7,7 @@ import Footer from './componentes/Footer'
 import Login from './componentes/Login'
 import Registro from './componentes/Registro'
 import {Route, Switch} from "wouter"
-import DetalleProd from './componentes/DetalleProd'
+import DetalleJuego from './componentes/DetalleJuego'
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Route path="/biblioteca" component={Biblioteca} />
         <Route path="/login" component={Login} />
         <Route path="/registro" component={Registro} />
-        <Route path="/detalleprod" component={DetalleProd} />
+        <Route path="/detallejuego" component={DetalleJuego} />
       </Switch>
     <Footer />
    </>

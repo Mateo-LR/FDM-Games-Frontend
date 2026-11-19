@@ -1,24 +1,68 @@
-import "../styles/Registro.css"
-import { Link } from "wouter"
 
-export default function Registro(){
-    return(
-        <>
+import "../styles/Registro.css";
+import { Link } from "wouter";
+
+export default function Login() {
+    return (
+        <div className="registro-container">
+
+            <div className="registro-img"></div>
+
             <div className="form-registro">
+
                 <h2>Registro</h2>
-                <form action="">
-                    <h3>Nombre de usuario</h3>
-                    <input type="text" />
-                    <h3>Correo electronico</h3>
-                    <input type="text" />
-                    <h3>Crear contraseña</h3>
-                    <input type="text" />
-                    <button type="submit" className="btn-reg">Registrarse</button>
+
+                <form>
+
+                    <div className="campo">
+                        <label>
+                            Nombre de usuario
+                        </label>
+                        <input 
+                            type="text"
+                            placeholder="Usuario1" 
+                        />
+                    </div>
+
+                    <div className="campo">
+                        <label>
+                            Correo electrónico
+                        </label>
+                        <input 
+                            type="email" 
+                            placeholder="usuario1@gmail.com"
+                        />
+                    </div>
+
+                    <div className="campo">
+                        <label>
+                            Crear contraseña
+                        </label>
+
+                        <div className="input-password">
+                            <input 
+                                type="password" 
+                                placeholder="password1"
+                            />
+                            <span className="ojo">◉</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" className="btn-registro">
+                        Registrarse
+                    </button>
+
                 </form>
-                <h3>Ya tenes una cuenta?</h3><Link href="/login" className="redir-log">Iniciar sesión</Link>
+
+                <div className="redireccion">
+                    <span>Ya tenés cuenta?</span>
+                    <Link href="/login" className="redir-reg">
+                        Inicia sesión
+                    </Link>
+                </div>
+
             </div>
-            <div className="apartado-img">
-            </div>
-        </>
-    )
+
+        </div>
+    );
 }

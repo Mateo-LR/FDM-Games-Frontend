@@ -1,4 +1,4 @@
-import "../styles/DetalleProd.css"
+import "../styles/DetalleJuego.css"
 
 export default function DetalleProd(){
     return(

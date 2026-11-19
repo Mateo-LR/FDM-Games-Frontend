@@ -1,64 +1,145 @@
-.form-registro{
-    background-color: #191D26;
-    width: 600px;
-    padding: 3vh;
+.registro-container {
+    width: 100%;
+    height: calc(100vh - 80px);
     display: flex;
-    float: right;
+    overflow: hidden;
+    background-color: #191D26;
+}
+
+.registro-img {
+    width: 50%;
+    height: 100%;
+    background-image: url("../assets/img-registro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-registro {
+    width: 50%;
+    height: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80.3vh;
-}
-form h3{
-    margin: 5px;
-    font-size: 20px;
-}
-.form-registro h2{
-    font-size: 25px;
-    color: white;
-    margin-bottom: 25px;
-}
-form input{
-    background: none;
-    width: 350px;
-    height: 24px;
-    border: 2px solid red;
-    border-radius: 10px;
-    margin: 5px;
+    box-sizing: border-box;
+    background-color: #191D26;
+    padding: 20px;
 }
 
-form button{
+.form-registro h2 {
+    color: #ff414b;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.form-registro form {
+    width: 90%;
+    max-width: 350px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.campo {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
 }
 
-h3{
+.campo label {
+    display: flex;
+    align-items: center;
     color: white;
     font-size: 15px;
+    margin-bottom: 4px;
 }
 
-.btn-reg{
-    background-color: #FF1F1F;
-    color: white;
-    border: none;
-    padding: 6px;
+.campo input {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1.5px solid #ff1717;
     border-radius: 10px;
+    outline: none;
+    padding: 5px 10px;
+    color: white;
 }
-.btn-reg:hover{
-    background-color: #E93434;
+.campo input:focus {
+    border-color: #ff5555;
+}
+
+.input-password {
+    position: relative;
+    width: 100%;
+}
+.input-password input {
+    padding-right: 35px;
+}
+.ojo {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
     cursor: pointer;
 }
-.redir-log{
-    color: red;
+
+.btn-registro {
+    align-self: center;
+    margin-top: 0;
+    padding: 6px 12px;
+    background-color: #ff1f2b;
+    color: white;
+    border: none;
+    border-radius: 10px;
     font-size: 15px;
-    margin-left: 5px;
+    cursor: pointer;
+}
+.btn-registro:hover {
+    background-color: #e93434;
 }
 
-.apartado-img{
-    float: left;
-    width: 108.3vh;
-    height: 86.3vh;
-    background-image: url("../assets/img-registro.jpg");
-    background-size: cover;
+
+/* REDIRECCION */
+
+.redireccion {
     display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 7px;
+
+    color: white;
+    font-size: 14px;
+}
+
+.redir-reg {
+    color: #ff3030;
+
+    text-decoration: underline;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .login-img {
+        display: none;
+    }
+
+    .form-login {
+        width: 100%;
+    }
+
+    .form-login form {
+        max-width: 350px;
+    }
 }

@@ -31,7 +31,6 @@ body{
     z-index: 1;
 }
 
-
 .texto-banner {
     position: absolute;
     top: 50%;
@@ -40,6 +39,7 @@ body{
     z-index: 2; 
     color: #ffffff;
     font-family: sans-serif;
+    max-width: 80%;
 }
 
 .texto-banner p {
@@ -52,7 +52,7 @@ body{
     display: inline-block;
     margin-top: 20px;
     padding: 10px 24px;
-    background-color: #8b0000; /* Rojo oscuro */
+    background-color: #8b0000;
     color: white;
     border: none;
     border-radius: 4px;
@@ -68,16 +68,19 @@ body{
 
 .titulo{
     color: white;
-    margin-top: 20px;
+    margin-top: 30px;
     justify-content: center;
     align-items: center;
     display: flex;
+    text-align: center;
+    padding: 0 10px;
 }
 .linea-dec{
     margin-right: 10px;
     margin-left: 10px;
     background-color: white;
-    width: 50vh;
+    flex: 1;
+    max-width: 250px;
     height: 2px;
 }
 
@@ -88,11 +91,13 @@ body{
     background-repeat: no-repeat;
     color: white;
     margin: 4vh auto;
-    width: 70%;
-    height: 17vh;
-    padding: 3rem 2rem;
+    width: 85%;
+    max-width: 1100px;
+    min-height: 17vh;
+    padding: 2rem 1rem;
     border-radius: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     gap: 1.5rem;
@@ -142,19 +147,355 @@ body{
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-.cont-juegos {  
-    background-color: red;
-    width: 20vh;
-    margin-top: 5vh;
-    color: white;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: space-around;
+.juegos-dest {
+    width: 85%;
+    max-width: 1300px;
+    margin: 5vh auto 8vh auto;
 }
 
-.juegosdest{
+.layout-juegos-dest {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 4vh;
+    align-items: stretch;
+}
+
+.sidebar-categorias {
+    width: 240px;
+    flex-shrink: 0;
+    background-image: url("../assets/fondo4.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sidebar-categorias h3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 0 0 1.5rem 0;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.cat-lateral-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.icono-cat-lateral {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #383838 0%, #151515 70%, #0a0a0a 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.05), 0 8px 20px rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icono-cat-lateral:hover {
+    transform: scale(1.06);
+    box-shadow: 0 8px 20px rgba(180, 0, 0, 0.5);
+}
+
+.icono-cat-lateral img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.cat-lateral-item span {
+    color: #ffffff;
+    margin-top: 0.6rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.grid-juegos-dest {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card-juego-dest {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #111;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.75);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+}
+
+.card-juego-dest:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(185, 0, 0, 0.45);
+}
+
+.card-juego-dest img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ribbon-precio {
+    position: absolute;
+    top: 22px;
+    right: -38px;
+    width: 150px;
+    background-color: #b80000;
+    color: #ffffff;
     text-align: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 5px 0;
+    transform: rotate(38deg);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    font-family: system-ui, -apple-system, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.mas-vendidos-section {
+    width: 85%;
+    max-width: 1300px;
+    margin: 8vh auto;
+}
+
+.cont-mas-vendidos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 4vh;
+}
+
+.item-ranking {
+    position: relative;
+    background: linear-gradient(145deg, #161616, #0d0d0d);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.item-ranking:hover {
+    transform: translateY(-5px);
+    border-color: rgba(185, 0, 0, 0.6);
+}
+
+.badge-ranking {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 2;
+}
+
+.badge-ranking.top-1 {
+    background-color: #b80000;
+    border-color: #ff3333;
+    box-shadow: 0 0 10px rgba(184, 0, 0, 0.8);
+}
+
+.item-ranking img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.info-ranking {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.info-ranking h4 {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.precio-ranking {
+    color: #ff4d4d;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.proximos-section {
+    width: 85%;
+    max-width: 1300px;
+    margin: 8vh auto;
+}
+
+.grid-proximos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4vh;
+}
+
+.card-proximo {
+    position: relative;
+    background-color: #121212;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.card-proximo:hover {
+    transform: translateY(-5px);
+}
+
+.badge-lanzamiento {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(184, 0, 0, 0.9);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-proximo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.card-proximo:hover img {
+    opacity: 1;
+}
+
+.proximo-info {
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.proximo-info h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 0 0.5rem 0;
+}
+
+.proximo-info p {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* ==========================================
+   MEDIA QUERIES (ADAPTABILIDAD MÓVIL Y TABLET)
+========================================== */
+
+@media (max-width: 1024px) {
+    .cont-mas-vendidos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 960px) {
+    /* Banner: texto más pequeño para que no desborde */
+    .texto-banner p {
+        font-size: 1.4rem;
+    }
+
+    /* Layout de juegos destacados pasa a columna vertical */
+    .layout-juegos-dest {
+        flex-direction: column;
+    }
+    
+    .sidebar-categorias {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1.5rem 1rem;
+    }
+    
+    .sidebar-categorias h3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .cat-lateral-item {
+        margin-bottom: 0;
+    }
+
+    .grid-juegos-dest {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .texto-banner p {
+        font-size: 1.1rem;
+    }
+    
+    .banner {
+        height: 40vh;
+    }
+
+    /* Títulos con líneas decorativas más compactas */
+    .linea-dec {
+        max-width: 80px;
+    }
+    
+    .titulo h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Grillas a una sola columna en móviles pequeños */
+    .grid-juegos-dest {
+        grid-template-columns: 1fr;
+    }
+
+    .cont-mas-vendidos {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-proximos {
+        grid-template-columns: 1fr;
+    }
 }
