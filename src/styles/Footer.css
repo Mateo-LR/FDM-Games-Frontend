@@ -1,0 +1,156 @@
+
+/* FOOTER GENERAL */
+
+.footer {
+    width: 100%;
+    min-height: 125px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #111111;
+
+    box-sizing: border-box;
+
+    /* Decoración superior */
+    border-top: 10px solid transparent;
+
+    background-image:
+        linear-gradient(#111111, #111111),
+        url("../assets/fondo-perfil.png");
+
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* LOGO */
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 5px 15px 0;
+}
+
+.footer-logo img {
+    width: 36px;
+    height: 36px;
+
+    object-fit: contain;
+}
+
+.footer-logo h2 {
+    color: white;
+
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 500;
+
+    margin: 0;
+}
+
+
+/* CONTENIDO */
+
+.footer-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px 10px;
+}
+
+
+/* CONTACTO */
+
+.footer-contacto {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.footer-contacto h3 {
+    color: white;
+
+    font-size: 17px;
+    font-weight: 400;
+
+    margin: 0;
+}
+
+.footer-contacto p {
+    color: #dddddd;
+
+    font-size: 11px;
+
+    margin: 0;
+}
+
+
+/* LINKS */
+
+.footer-links {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.footer-links a {
+    color: #dddddd;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff2929;
+}
+
+
+/* SEPARADORES */
+
+.separador {
+    width: 1px;
+    height: 23px;
+
+    background-color: #777777;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    .footer-contenido {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+
+        gap: 8px;
+    }
+
+    .footer-links a {
+        font-size: 12px;
+    }
+
+    .footer-logo h2 {
+        font-size: 21px;
+    }
+
+}

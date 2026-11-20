@@ -1,0 +1,206 @@
+.detalle-juego {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenido-juego {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.15fr 0.95fr;
+    gap: 12px;
+}
+
+.imagenes-juego {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.portada-principal {
+    width: 100%;
+    height: 305px;
+    overflow: hidden;
+}
+
+.portada-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.miniaturas {
+    display: flex;
+    gap: 7px;
+    width: 100%;
+    height: 38px;
+}
+
+.miniaturas img {
+    width: 28%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.compra-juego {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.compra-juego h3 {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 3px 0;
+}
+
+.btn-carrito {
+    background-color: #080808;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 5px 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.info-juego {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.banner-juego {
+    width: 100%;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.banner-juego img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.descripcion-juego {
+    width: 100%;
+    min-height: 245px;
+    padding: 12px;
+    box-sizing: border-box;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url("../assets/fondo-dying.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.descripcion-juego p {
+    color: #e2e2e2;
+    font-size: 11px;
+    line-height: 1.35;
+    margin: 0;
+}
+
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 5px;
+}
+
+.caracteristica {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    font-size: 12px;
+}
+
+.etiquetas {
+    display: flex;
+    gap: 6px;
+}
+
+.etiquetas span {
+    background-color: #92180e;
+    padding: 5px 12px;
+    border-radius: 7px;
+    font-size: 11px;
+}
+
+.etiquetas .etiqueta-secundaria {
+    font-size: 9px;
+}
+
+.nombre-saga {
+    background: #252525;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.complementos {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.complementos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.complementos-header h3 {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.complementos-header a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+
+.lista-complementos {
+    display: flex;
+    gap: 12px;
+}
+
+.complemento {
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.complemento img {
+    width: 65px;
+    height: 95px;
+    object-fit: cover;
+}
+
+.complemento p {
+    color: #ddd;
+    font-size: 10px;
+    line-height: 1.3;
+    margin-top: 5px;
+}
