@@ -1,0 +1,152 @@
+.sobre-nosotros {
+    min-height: calc(100vh - 60px);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.titulo-sobre {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.contenedor-info {
+    width: 100%;
+    max-width: 375px;
+    padding: 10px 23px;
+    background-color: #111;
+    border: 1px solid #e00016;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+.apartado-info {
+    margin-bottom: 20px;
+}
+
+.apartado-info:last-child {
+    margin-bottom: 0;
+}
+
+.apartado-info h3 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0 0 10px;
+}
+
+.apartado-info h3::before,
+.apartado-info h3::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background-color: #555;
+}
+
+.apartado-info p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.25;
+    text-align: left;
+
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    .sobre-nosotros {
+        padding: 25px 15px;
+    }
+
+    .contenedor-info {
+        padding: 12px 18px;
+    }
+
+    .apartado-info p {
+        font-size: 12px;
+    }
+}.sobre-nosotros {
+    min-height: calc(100vh - 60px);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.titulo-sobre {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.contenedor-info {
+    width: 100%;
+    max-width: 375px;
+    padding: 10px 23px;
+
+    background-color: #111;
+    border: 1px solid #e00016;
+    border-radius: 7px;
+
+    box-sizing: border-box;
+}
+
+.apartado-info {
+    margin-bottom: 20px;
+}
+
+.apartado-info:last-child {
+    margin-bottom: 0;
+}
+
+.apartado-info h3 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0 0 10px;
+}
+
+.apartado-info h3::before,
+.apartado-info h3::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background-color: #555;
+}
+
+.apartado-info p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.25;
+    text-align: left;
+
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    .sobre-nosotros {
+        padding: 25px 15px;
+    }
+
+    .contenedor-info {
+        padding: 12px 18px;
+    }
+
+    .apartado-info p {
+        font-size: 12px;
+    }
+}

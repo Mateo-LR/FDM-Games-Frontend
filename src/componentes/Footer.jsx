@@ -23,7 +23,7 @@ export default function Footer() {
                         Catálogo
                     </Link>
                     <span className="separador"></span>
-                    <Link href="/sobre-nosotros">
+                    <Link href="/sobrenosotros">
                         Sobre nosotros
                     </Link>
                     <span className="separador"></span>
